@@ -15,6 +15,8 @@ namespace UsingSoap
     public class Service1 : IService1
     {
         Bil bil = new Bil("12345", new DateTime(2018, 2, 1), false, false);
+        Bil bil2 = new Bil("12345", new DateTime(2018, 2, 1), false, false);
+
         MC mc1 = new MC("1234", new DateTime(2018, 2, 1), false, false);
 
 
@@ -22,6 +24,11 @@ namespace UsingSoap
         {
            return bil.Pris();
             
+        }
+
+        public string GetBil()
+        {
+            return bil2.Køretøj();
         }
 
         public int GetPrisMC()

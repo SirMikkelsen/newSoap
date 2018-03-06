@@ -26,6 +26,21 @@ namespace UsingSoap.Tests
 
 
         [TestMethod()]
+        public void KøretøjForBilTest()
+        {
+            // Arrange
+             Service1 b2 = new Service1();
+            string expectedResult = "Bil";
+
+            // Act
+            var actualResult = b2.GetBil();
+
+            //  Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+        [TestMethod()]
         public void PrisForMCTest()
         {
             // Arrange 
