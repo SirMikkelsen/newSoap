@@ -15,12 +15,18 @@ namespace UsingSoap
     public class Service1 : IService1
     {
         Bil bil = new Bil("12345", new DateTime(2018, 2, 1), false, false);
-        
-        
-        public int GetPris()
+        MC mc1 = new MC("1234", new DateTime(2018, 2, 1), false, false);
+
+
+        public int GetPrisBil()
         {
            return bil.Pris();
             
+        }
+
+        public int GetPrisMC()
+        {
+            return mc1.Pris();
         }
     }
 }

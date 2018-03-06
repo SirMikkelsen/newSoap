@@ -15,7 +15,11 @@ namespace UsingSoap
 
         [OperationContract]
 
-        int GetPris();
+        int GetPrisBil();
+
+        [OperationContract]
+
+        int GetPrisMC();
 
 
 

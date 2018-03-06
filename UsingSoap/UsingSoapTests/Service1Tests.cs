@@ -19,9 +19,25 @@ namespace UsingSoap.Tests
             Service1 b1 = new Service1();
             int expectedResult = 240;
             // Act
-            var actualResult = b1.GetPris();
+            var actualResult = b1.GetPrisBil() ;
             // Assert
             Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+        [TestMethod()]
+        public void PrisForMCTest()
+        {
+            // Arrange 
+            Service1 mc1 = new Service1();
+            int expectedResult = 125;
+
+            // Act
+            var actualResult = mc1.GetPrisMC();
+
+            // Assert
+            Assert.AreEqual(expectedResult, actualResult);
+
         }
     }
 }
