@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLib</name>
+    </assembly>
+    <members>
+        <member name="M:BilletLib.Bil.#ctor(System.String,System.DateTime,System.Boolean,System.Boolean)">
+            <summary>
+            Constructs a car objet if numberplate is over 7 signs an exception will be trown
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="dato"></param>
+            <param name="brobizz"></param>
+            <param name="øresund"></param>
+        </member>
+        <member name="M:BilletLib.Bil.Pris">
+            <summary>
+            Calulates pris depending on day of week
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLib.Kunde.TotalPris">
+            <summary>
+            Calculates total pris 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletLib.MC.#ctor(System.String,System.DateTime,System.Boolean,System.Boolean)">
+            <summary>
+            Constructs a MC objet if numberplate is over 7 signs an exception will be trown
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="dato"></param>
+            <param name="brobizz"></param>
+            <param name="øresund"></param>
+        </member>
+        <member name="M:BilletLib.MC.Pris">
+            <summary>
+            Calculates pris for discount and bridge
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
